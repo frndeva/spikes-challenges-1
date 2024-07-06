@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vaultflow</title>
+
+        <!--============== TAILWIND CSS ==============-->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+        <!--============== LINK CSS ==============-->
+        <link rel="stylesheet" href="dist/output.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!--============== ICO ==============-->
+        <link rel="icon" type="image/png" href="images/logo.png" />
+
+        <!--============== FONT AWESOME ==============-->
+        <script src="https://kit.fontawesome.com/983ac4c6a9.js" crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+    </head>
+    <body class="bg-primary text-secondary">
+
+        <!--============== HEADER ==============-->
+        <header>
+            <nav class="flex items-center justify-between fixed w-11/12 px-10 left-1/2 transform -translate-x-1/2 bg-background-1 mt-8 rounded-3xl z-20 backdrop-blur-md h-16 md:h-20 xl:h-16 2xl:h-20 ">
+                <div class="flex items-center gap-3">
+                    <img class="w-6" src="images/logo.png" alt="Logo Vaultflow">
+                    <h5>Vaultflow</h5>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex gap-11">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">About us</a></li>
+                    </ul>
+                </div>
+                <button class="hidden md:block bg-secondary text-tertiary rounded-3xl px-5 py-2">Download the app</button>
+                <div id="nav-open">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </nav>
+
+            <nav id="nav-toggle">
+                <ul>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <div id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </nav>
+
+            <div class="flex flex-col items-center justify-center mt-36 md:mt-60 xl:mt-40 2xl:mt-60">
+                <button class="py-2 px-5 rounded-3xl border-2 mx-32 md:mx-0">We just raised $20M in Series B. Learn more</button>
+                <h1>Modern analytics<br> for the modern world</h1>
+                <p class="text-center mx-10 md:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Suspendisse varius enim in eros elementum tristique. </p>
+                <div class="mt-4 gap-4 flex flex-col md:flex-row">
+                    <button class="bg-secondary text-tertiary rounded-3xl px-6 py-3 ">Download the app</button>
+                    <button class="px-6 py-3 rounded-3xl border-2">Talk to an expert</button>
+                </div>
+                <img class="my-20 w-2/3 rounded-3xl" id="hero-shadow" src="images/dash.png" alt="Image dash">
+            </div>
+        </header>
+
+        <main>
+
+            <!--============== SECTION LOGO ==============-->
+            <section class=" flex flex-col items-center my-14">
+                <h6 class="text-center mx-20 md:mx-0">Trusted by teams at over <span class="font-medium">1,000</span> of the world's leading organizations</h6>
+                <div class="flex flex-wrap mt-10 gap-12 justify-center mx-4">
+                    <img class="object-contain" src="images/logo-dell.png" alt="Logo Dell">
+                    <img class="object-contain" src="images/logo-zendesk.png" alt="Logo Zendesk">
+                    <img class="object-contain" src="images/logo-rakuten.png" alt="Logo Rakuten">
+                    <img class="object-contain" src="images/logo-pacificfunds.png" alt="Logo Pacific Funds">
+                    <img class="object-contain" src="images/logo-ncr.png" alt="Logo NCR">
+                    <img class="object-contain" src="images/logo-lattice.png" alt="Logo Lattice">
+                    <img class="object-contain" src="images/logo-ted.png" alt="Logo Ted">
+                </div>
+            </section>
+
+            <!--============== SECTION FEATURES ==============-->
+            <section class="flex flex-col items-center my-6">
+                <div id="features-bg">
+                    <h2>Features that<br>work for your<br>future.</h2>
+                    <p class="text-center mt-6 mx-20 md:mx-40 2xl:mx-96 px-0 xl:px-8 2xl:px-52">Check out our amazing features and experience the power of Vaultflow for yourself.</p>
+                </div>
+                <div class="mt-20 flex items-center gap-6 mx-10 md:mx-16 xl:mx-24 2xl:mx-56 flex-col xl:flex-row">
+                    <div class="card flex flex-col items-center rounded-3xl p-10">
+                        <img class="w-12 h-12 mb-4" src="images/icon-1.png" alt="Icon Analytics">
+                        <h3 class="text-center">Analytics Dashboard</h3>
+                        <p class="text-sm my-3 text-center">Our Analytics Dashboard provides a clear and intuitive interface for you to easily analyze your data. From customizable graphs to real-time data updates, our dashboard offers everything you need to gain valuable insights.</p>
+                        <a class="mt-4 hover:underline" href="">View dashboard</a>
+                    </div>
+                    <div class="card flex flex-col items-center rounded-3xl p-10">
+                        <img class="w-12 h-12 mb-4" src="images/icon-2.png" alt="Icon Analytics">
+                        <h3 class="text-center">Digital Credit Tokens</h3>
+                        <p class="text-sm my-3 text-center">Reward your customers and incentivize engagement with our innovative digital credit tokens. Our tokens can be customized to match your branding, and are a flexible and scalable way to drive customer loyalty and encourage repeat business.</p>
+                        <a class="mt-4 hover:underline" href="">View tokens</a>
+                    </div>
+                </div>
+                <div class="card flex flex-col xl:flex-row items-center rounded-3xl p-10 mt-6 xl:mt-20 mx-10 md:mx-16 xl:mx-24 2xl:mx-56">
+                    <div class="flex flex-col items-center xl:items-start">
+                        <img class="w-12 h-12 mb-4" src="images/icon-3.png" alt="Icon Analytics">
+                        <h3 class="text-center">Code collaboration</h3>
+                        <p class="text-center xl:text-start text-sm my-3 2xl:mr-48 xl:mr-48 md:mr-0">Our advanced code synchronization technology ensures that your data is always up-to-date and accurate, no matter where it's coming from. Whether you're integrating data from multiple sources or working with a team of developers, our synchronization technology makes it easy to collaborate and ensure that your data is consistent and reliable.</p>
+                        <a class="mt-4 hover:underline mb-5 md:mb-0" href="">View code collaboration</a>
+                    </div>
+                    <img class="object-contain w-full xl:w-2/5 2xl:w-2/5   2xl:mt-0 xl:mt-0 md:mt-10" src="images/code.png" alt="code">
+                </div>
+            </section>
+
+            <!--============== SECTION DOWNLOAD ==============-->
+            <section class="card my-16 flex flex-col justify-center items-center rounded-3xl p-10 mx-10 md:mx-16 xl:mx-24 2xl:mx-56">
+                <h2 class="font-bold text-center">Our powerful analytics<br> provides invaluable insights.</h2>
+                <p class="my-6 text-center 2xl:mx-48 xl:mx-48 md:mx-0">Unlock the power of data with our cutting-edge analytics product. Get instant insights with our user-friendly Analytics Dashboard, and take advantage of our innovative digital credit tokens to reward your customers and incentivize engagement.</p>
+                <button class="px-6 py-3 rounded-3xl border-2 2xl:w-1/5 xl:w-1/5 md:w-2/5">Download the app</button>
+            </section>
+        </main>
+
+        <!--============== FOOTER ==============-->
+        <footer class="py-20 px-10 xl:px-32 flex flex-col xl:flex-row xl:justify-between">
+            <div class="items-start">
+                <h4 class="pb-4">Contact</h4>
+                <p>Work inquiries: <a href="mailto:work@vaultflow.com">work@vaultflow.com</a></p>
+                <p>PR and speaking: <a href="mailto:press@vaultflow.com">press@vaultflow.com</a></p>
+                <p class="pb-10">New business: <a href="mailto:newbusiness@vaultflow.com">newbusiness@vaultflow.com</a></p>
+                <h4 class="pb-4">Careers</h4>
+                <p class="pb-10" ><a href="mailto:careers@vaultflow.com">careers@vaultflow.com</a></p>
+                <p class="pb-10 xl:pb-0">&copy; 2023 Vaultflow. All Rights Reserved.</p>
+            </div>
+
+            <div class="items-start">
+                <h4 class="pb-4">Address</h4>
+                <p class="pb-10">398 11th Street, Floor 2<br>San Francisco, CA 94103</p>
+                <h4 class="pb-4">Social</h4>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p class="pb-10 xl:pb-0"><a href="#">Tik Tok</a></p>
+            </div>
+
+            <div class="flex flex-col justify-end items-start xl:items-end">
+                <div class="flex items-center gap-3">
+                    <img class="w-6 h-6" src="images/logo.png" alt="Logo Vaultflow">
+                    <h5>Vaultflow</h5>
+                </div>
+            </div>
+        </footer>
+</html>
